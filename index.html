@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM</title>
+</head>
+<br>
+   javascript allows us to manipulate the DOM(Documment Object model) 
+  that represents all of the elements that happen to be on that page 
+
+  
+
+  <h1>Using javascript in web programming</h1>
+  <hr>
+  <button onclick="reveal()">reveal</button>
+  <br></br>
+  <br>
+  <button onclick="">simple</button>
+
+  <script>
+    //alert('Hello, world!'); 
+    //function testSimple () { alert ('Hello, world!' )};
+    // creating functions in javascript
+
+    function Jonah(){
+
+      alert('Hello, world!');
+    }
+
+    // creating function for the data button
+    function data(){
+      alert('you are sending data to the server')
+    }
+
+    // creating function for the sending button
+    function send(){
+      alert('You are now initiating a new message')
+    }
+    //The cisco function
+    function cisco(){
+      alert('This is cisco.com')
+    }
+
+
+    // in javascript we have access to a function  called the document.querySelector .
+
+    function reveal(){
+      document.querySelector('h1').innerHTML = 'Javascript is a client side scripting language';
+
+    }
+    
+  </script>
+
+  <button onclick="Jonah()">info</button>
+  <br>
+  <br>
+  <button onclick="data()" >data</button>
+  <button onclick="send()">send</button>
+  <button onclick="cisco()">cisco</button>
+  
+</body>
+</html>
